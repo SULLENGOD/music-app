@@ -3,7 +3,7 @@
 
   
 
-##  Descripcion
+##  Description
 This application allows you to consult the most played tracks of the week and your recently listened tracks.
 
 ### Instrucciones para ejecutar la aplicación Music App
