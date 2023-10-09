@@ -1,12 +1,3 @@
-#  music-app
-
-  
-
-##  Descripcion
-
-This Application 
-  
-
 
 #  music-app
 
