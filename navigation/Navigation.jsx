@@ -84,6 +84,7 @@ function Tabs() {
       initialRouteName="Home"
       activeColor="#162238"
       inactiveColor="#a6a6a6"
+      compact="true"
       shifting="true"
       theme={{ colors: { secondaryContainer: "transparent" } }}
       barStyle={{

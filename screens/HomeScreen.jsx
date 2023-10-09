@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { View, RefreshControl } from "react-native";
 import React, { useEffect, useState } from "react";
 import CardSong from "../components/CardSong";
 import { getTopSongs } from "../api/fetchSongs";

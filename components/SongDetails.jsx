@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { AntDesign } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Card } from "react-native-paper";
 
 export default function SongDetails({ track }) {
   const [imageExists, setImageExists] = useState(false);
@@ -30,14 +31,18 @@ export default function SongDetails({ track }) {
       <View style={styles.cardContainer}>
         <View style={styles.shadowView}>
           {imageExists && imageUrl ? (
-            <Image source={{ uri: imageUrl }} style={styles.artistImage} />
+            <Card elevation={2}>
+              <Image source={{ uri: imageUrl }} style={styles.artistImage} />
+            </Card>
           ) : (
-            <MaterialCommunityIcons
+            <Card elevation={2}>
+              <MaterialCommunityIcons
               name="image-off"
-              size={200}
+              size={250}
               color="black"
               style={styles.notImage}
             />
+            </Card>
           )}
         </View>
         <View style={styles.infoContainer}>
@@ -84,15 +89,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   shadowView: {
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 12,
-    },
-    shadowOpacity: 0.58,
-    shadowRadius: 16.0,
-
-    elevation: 24,
     margin: 20,
   },
   infoContainer: {
@@ -110,5 +106,7 @@ const styles = StyleSheet.create({
   notImage: {
     alignSelf: "center",
     padding: 20,
+    backgroundColor: "#fff",
+    borderRadius: 10
   },
 });
